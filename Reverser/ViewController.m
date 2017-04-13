@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SBDReverser.h"
+#import "SBDUppercaser.h"
 
 const NSString *kTextFieldDefault = @"Enter string";
 
@@ -16,6 +17,7 @@ const NSString *kTextFieldDefault = @"Enter string";
 @property(nonatomic, weak) IBOutlet UITextField *sourceStringField;
 @property(nonatomic, weak) IBOutlet UILabel *resultLabel;
 @property(nonatomic, weak) IBOutlet UIButton *reverseButton;
+@property(nonatomic, weak) IBOutlet UIButton *uppercaseButton;
 
 @end
 
@@ -41,6 +43,9 @@ const NSString *kTextFieldDefault = @"Enter string";
     self.resultLabel.text = [SBDReverser reverseString:self.sourceStringField.text];
 }
 
+- (IBAction)uppercase:(id)sender {
+    self.resultLabel.text = [SBDUppercaser uppercase:self.sourceStringField.text];
+}
 
 #pragma mark - User interations
 
