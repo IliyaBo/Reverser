@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface UppercaseTests : XCTestCase
+@interface UppercaseUITests : XCTestCase
 
 @end
 
-@implementation UppercaseTests
+@implementation UppercaseUITests
 
 - (void)setUp {
     [super setUp];
